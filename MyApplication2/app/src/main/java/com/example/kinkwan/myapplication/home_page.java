@@ -3,7 +3,10 @@ package com.example.kinkwan.myapplication;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+<<<<<<< HEAD
 import android.graphics.Color;
+=======
+>>>>>>> parent of bd337a5... Use coupon
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -12,7 +15,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 import android.widget.AdapterView;
+=======
+>>>>>>> parent of bd337a5... Use coupon
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -87,6 +93,7 @@ public class home_page extends AppCompatActivity  implements SensorEventListener
 
         listView.setAdapter(adapter);
 
+<<<<<<< HEAD
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -95,6 +102,8 @@ public class home_page extends AppCompatActivity  implements SensorEventListener
 
             }
         });
+=======
+>>>>>>> parent of bd337a5... Use coupon
     }
 
     public void check_points(View view){
@@ -127,11 +136,14 @@ public class home_page extends AppCompatActivity  implements SensorEventListener
         home_page.this.recreate();
     }
 
+<<<<<<< HEAD
     public void use_coupon_QRcode(View view){
         startActivity(new Intent(this, CrunchifyQRCode.class));
         home_page.this.recreate();
     }
 
+=======
+>>>>>>> parent of bd337a5... Use coupon
     public void refresh_home(View view){
         startActivity(new Intent(this, home_page.class));
         home_page.this.finish();

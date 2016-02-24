@@ -35,6 +35,10 @@
                     android:scaleType="fitCenter"
                     android:maxWidth="40dp"
                     android:maxHeight="40dp"
+<<<<<<< HEAD
+=======
+                    android:onClick="add_coupon_nfc"
+>>>>>>> parent of bd337a5... Use coupon
                     android:background="#00000000"
                     android:layout_weight="1" />
 
@@ -44,7 +48,12 @@
                     android:id="@+id/imageView"
                     android:src="@mipmap/ic_launcher"
                     android:adjustViewBounds="true"
+<<<<<<< HEAD
                     android:scaleType="fitCenter" />
+=======
+                    android:scaleType="fitCenter"
+                    android:onClick="refresh_home"/>
+>>>>>>> parent of bd337a5... Use coupon
 
 
                 <TextView
@@ -61,6 +70,7 @@
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+<<<<<<< HEAD
                 android:layout_weight="2"
                 android:weightSum="1">
 
@@ -76,14 +86,26 @@
                 <ImageButton
                     android:layout_width="46dp"
                     android:layout_height="match_parent"
+=======
+                android:layout_weight="2">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+>>>>>>> parent of bd337a5... Use coupon
                     android:id="@+id/imageButton"
                     android:src="@android:drawable/ic_notification_clear_all"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:background="#00000000"
+<<<<<<< HEAD
                     android:onClick="logout"
                     android:maxWidth="20dp"
                     android:maxHeight="50dp" />
+=======
+                    android:layout_weight="2"
+                    android:onClick="logout"/>
+>>>>>>> parent of bd337a5... Use coupon
             </LinearLayout>
         </LinearLayout>
 
@@ -169,11 +191,16 @@
                 android:maxWidth="40dp"
                 android:maxHeight="40dp"
                 android:background="#00000000"
+<<<<<<< HEAD
                 android:layout_weight="1.5"
+=======
+                android:layout_weight="1"
+>>>>>>> parent of bd337a5... Use coupon
                 android:onClick="add_coupon"/>
             <ImageButton
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
                 android:id="@+id/imageButton01"
                 android:src="@android:drawable/ic_menu_view"
                 android:adjustViewBounds="true"
@@ -197,6 +224,8 @@
             <ImageButton
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+=======
+>>>>>>> parent of bd337a5... Use coupon
                 android:id="@+id/imageButton4"
                 android:src="@android:drawable/ic_menu_myplaces"
                 android:adjustViewBounds="true"
@@ -204,8 +233,12 @@
                 android:maxWidth="40dp"
                 android:maxHeight="40dp"
                 android:background="#00000000"
+<<<<<<< HEAD
                 android:layout_weight="1.5"
                 android:onClick="use_coupon_QRcode" />
+=======
+                android:layout_weight="1" />
+>>>>>>> parent of bd337a5... Use coupon
 
             <ImageButton
                 android:layout_width="fill_parent"
@@ -217,7 +250,11 @@
                 android:maxWidth="40dp"
                 android:maxHeight="40dp"
                 android:background="#00000000"
+<<<<<<< HEAD
                 android:layout_weight="1.5"
+=======
+                android:layout_weight="1"
+>>>>>>> parent of bd337a5... Use coupon
                 android:onClick="check_points"/>
         </LinearLayout>
         <LinearLayout
@@ -225,6 +262,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+<<<<<<< HEAD
+=======
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Coupon"
+                android:id="@+id/textView4"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="15dp"
+                android:onClick="add_coupon"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Use Coupon"
+                android:id="@+id/textView5"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Reward Points"
+                android:id="@+id/textView3"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="15dp"
+                android:onClick="check_points"/>
+>>>>>>> parent of bd337a5... Use coupon
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

@@ -47,8 +47,12 @@
         <activity android:name=".home_page" />
         <activity android:name=".add_coupon" />
         <activity android:name=".reward_point" />
+<<<<<<< HEAD
         <activity android:name=".add_coupon_nfc" />
         <activity android:name=".CrunchifyQRCode"></activity>
+=======
+        <activity android:name=".add_coupon_nfc"></activity>
+>>>>>>> parent of bd337a5... Use coupon
     </application>
 
 </manifest>
