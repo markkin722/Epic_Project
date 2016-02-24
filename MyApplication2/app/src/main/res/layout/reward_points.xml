@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutHolder">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:id="@+id/topSection">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:background="#DDDDDD">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|right">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton5"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:maxWidth="40dp"
+                    android:maxHeight="40dp"
+                    android:background="#00000000"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:src="@mipmap/ic_launcher"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:onClick="refresh_home"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/user_telephone"
+                    android:text="@string/title"
+                    android:textColor="#363636"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/middleSection"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="10dp"
+        android:layout_weight="1000">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:id="@+id/imageView2"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:maxWidth="42dp"
+                android:maxHeight="42dp"
+                android:src="@android:drawable/ic_menu_info_details"
+                android:layout_weight="0.07" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Points:"
+                android:id="@+id/textView6"
+                android:paddingLeft="7dp"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/points"
+                android:paddingLeft="7dp"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            </ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomSection"
+        android:background="#29A9D2"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton3"
+                android:src="@android:drawable/ic_input_add"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:background="#00000000"
+                android:layout_weight="1" />
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton4"
+                android:src="@android:drawable/ic_menu_myplaces"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:background="#00000000"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                android:src="@android:drawable/btn_star_big_on"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:background="#00000000"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Coupon"
+                android:id="@+id/textView4"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Use Coupon"
+                android:id="@+id/textView5"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Reward Points"
+                android:id="@+id/textView3"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
