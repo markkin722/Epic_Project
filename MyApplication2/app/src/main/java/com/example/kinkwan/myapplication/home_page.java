@@ -112,6 +112,11 @@ public class home_page extends AppCompatActivity  implements SensorEventListener
         //StartPage.this.finish();
     }
 
+    public void add_coupon_nfc(View view){
+        startActivity(new Intent(this, add_coupon_nfc.class));
+        home_page.this.recreate();
+    }
+
     public void refresh_home(View view){
         startActivity(new Intent(this, home_page.class));
         home_page.this.finish();

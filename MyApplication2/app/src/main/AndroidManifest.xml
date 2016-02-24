@@ -46,7 +46,8 @@
         <activity android:name=".existed_user" />
         <activity android:name=".home_page" />
         <activity android:name=".add_coupon" />
-        <activity android:name=".reward_point" ></activity>
+        <activity android:name=".reward_point" />
+        <activity android:name=".add_coupon_nfc"></activity>
     </application>
 
 </manifest>

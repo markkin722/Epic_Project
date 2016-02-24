@@ -29,6 +29,8 @@ public class add_coupon extends AppCompatActivity {
         TextView add1 = (TextView) findViewById(R.id.add1);
         add1.setText(phoneKey);
 
+
+
         new IntentIntegrator(this).initiateScan();
 
         integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
@@ -45,19 +47,26 @@ public class add_coupon extends AppCompatActivity {
         TextView add1 = (TextView) findViewById(R.id.add1);
         TextView add6 = (TextView) findViewById(R.id.add6);
         String method2 = "add_coupon";
-        backgroundTask backgroundTask2= new backgroundTask(this);
-        backgroundTask2.execute(method2, add1.getText().toString(), add6.getText().toString());
-        finish();
+        if (add6.getText().equals("")){
+            Toast.makeText(this,"No coupon detected!",Toast.LENGTH_SHORT).show();
+        } else {
+            backgroundTask backgroundTask2= new backgroundTask(this);
+            backgroundTask2.execute(method2, add1.getText().toString(), add6.getText().toString());
+            finish();
+        }
     }
 
     public void cancel_coupon(View view){
         finish();
     }
 
+
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent){
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         String coupons = "";
+
         if (result != null) {
             String contents = result.getContents();
             if (contents != null) {
@@ -101,5 +110,10 @@ public class add_coupon extends AppCompatActivity {
         } else {
             add_coupon.this.finish();
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 }
